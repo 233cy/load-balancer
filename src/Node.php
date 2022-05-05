@@ -34,7 +34,7 @@ class Node
      */
     public $pathPrefix = '';
 
-    public function __construct(string $host, int $port, int $weight = 0, string $pathPrefix = '')
+    public function __construct(string $host, int $port, int | float $weight = 0, string $pathPrefix = '')
     {
         $this->host = $host;
         $this->port = $port;
